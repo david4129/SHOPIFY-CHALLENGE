@@ -1,3 +1,4 @@
+1.
 SELECT COUNT(*) AS 'NO OF ORDERS' FROM Shippers LEFT OUTER JOIN ORDERS
 					 ON Shippers.ShipperID = ORDERS.ShipperID
 WHERE Shippers.ShipperName = 'Speedy Express';
@@ -5,6 +6,7 @@ WHERE Shippers.ShipperName = 'Speedy Express';
 #OUTPUT
 54
 
+2.
 SELECT Employees.LastName FROM Employees LEFT OUTER JOIN ORDERS
 					 ON Employees.EmployeeID = ORDERS.EmployeeID
 GROUP BY Employees.LastName
